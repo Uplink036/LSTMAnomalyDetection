@@ -15,4 +15,4 @@ if [ ! -f  $DIR_PATH"network-anamoly-detection.zip" ]; then
 fi
 
 # Send all data to database
-# python3 load_data.py
+python3 load_data.py

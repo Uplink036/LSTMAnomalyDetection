@@ -1,5 +1,5 @@
 FROM python
-RUN mkdir /tmp/data
+RUN mkdir /logs
 WORKDIR /loader
 COPY . .
 RUN pip install -r requirments.txt

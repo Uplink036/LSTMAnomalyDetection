@@ -7,6 +7,7 @@ services:
       SCRUB_DB: 1
     volumes:
       - ./containers/loader:/loader
+      - ./logs:/logs
     depends_on:
       - database
 
