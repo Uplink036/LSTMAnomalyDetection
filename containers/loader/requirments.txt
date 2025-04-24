@@ -1,0 +1,4 @@
+numpy
+pymongo
+python-dotenv
+pandas

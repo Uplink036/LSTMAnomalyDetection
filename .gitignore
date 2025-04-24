@@ -1,3 +1,5 @@
+containers/loader/data/
+
 logs
 *.env
 

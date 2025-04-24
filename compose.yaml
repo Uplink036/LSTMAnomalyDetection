@@ -1,0 +1,17 @@
+services:
+  loader:
+    build: ./containers/loader/
+    container_name: loader
+    environment:
+      DATABASE_URL: mongodb://database:27017/
+      SCRUB_DB: 1
+    volumes:
+      - ./containers/loader:/loader
+    depends_on:
+      - database
+
+  database:
+    image: "mongodb/mongodb-community-server"
+    ports:
+      - 27017:27017
+    command: --quiet --logpath /dev/null
