@@ -2,5 +2,7 @@ numpy
 pandas
 pymongo
 torch
+torchsummary
+torchinfo
 matplotlib
 seaborn
